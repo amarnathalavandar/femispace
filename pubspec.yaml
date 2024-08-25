@@ -1,0 +1,80 @@
+name: femi_space_dashboard
+description: "FemiSpace Dashboard Task"
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.4.1 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  #DEBUG ONLY
+  device_preview: ^1.2.0
+
+  #Utility Packages
+  cupertino_icons: ^1.0.6
+  equatable: ^2.0.5
+  shimmer: ^3.0.0
+  iconsax: ^0.0.8
+  google_fonts: ^6.0.1
+  flutter_svg: ^2.0.9
+
+
+  # State Management
+  flutter_riverpod: ^2.5.1
+  font_awesome_flutter: ^10.7.0
+  fluentui_system_icons: ^1.1.254
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+
+
+flutter:
+  uses-material-design: true
+
+  #--------------------------- LOCAL ASSETS ---------------------#
+
+  assets:
+     - assets/images/container_bg/
+     - assets/icons/svgicons/
+
+
+  #--------------------------- LOCAL FONTS ---------------------#
+
+  fonts:
+    - family: Roboto
+      fonts:
+        - asset: assets/fonts/Roboto/Roboto-Bold.ttf
+        - asset: assets/fonts/Roboto/Roboto-Italic.ttf
+          style: italic
+        - asset: assets/fonts/Roboto/Roboto-Light.ttf
+          weight: 300
+        - asset: assets/fonts/Roboto/Roboto-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Roboto/Roboto-MediumItalic.ttf
+          weight: 500
+        - asset: assets/fonts/Roboto/Roboto-Regular.ttf
+          weight: 400
+
+    - family: Poppins
+      fonts:
+        - asset: assets/fonts/Poppins-Bold.ttf
+        - asset: assets/fonts/Poppins-Italic.ttf
+          style: italic
+        - asset: assets/fonts/Poppins-Light.ttf
+          weight: 300
+        - asset: assets/fonts/Poppins-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Poppins-MediumItalic.ttf
+          weight: 500
+        - asset: assets/fonts/Poppins-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/Poppins-SemiBold.ttf
+          weight: 600
